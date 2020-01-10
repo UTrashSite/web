@@ -2,7 +2,7 @@
 An attempt to make a better version of the school student web service
 
 ## Please help contribute to this repository!
-The plan is to use Firebase as a back end, for authentication and database services
+Contact me to become a part of the organization, and we can help create this together!
 
 ## Plan:
 
