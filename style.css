@@ -1,0 +1,16 @@
+body{
+  background-image: url("https://media1.giphy.com/media/iF3M9gPPCdulq/giphy.gif");
+  background-color: #cccccc;
+  color: red; 
+}
+
+h1{
+  background-color: white; 
+}
+
+p{
+  background-color: white; 
+}
+.center{
+  text-align: center;
+}
