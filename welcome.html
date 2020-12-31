@@ -1,21 +1,55 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>BIG ERROR</title>
-        <link href="style.css" rel="stylesheet" type="text/css" />
 
-  </head>
-  <body>
-    <p>Authorization Error -- Contact your Security Administrator</p>
-    <p>Authorization Error -- Contact your Security Administrator</p>
-    <br><br><br>
-    <p>       .         .         .</p>
-    <img src="https://media1.giphy.com/media/3o7bu3XilJ5BOiSGic/giphy.gif">
-    <p>Authorization Error -- Contact your Security Administrator</p>
-    <img src="https://thumbs.gfycat.com/HomelyOrganicAmericancrayfish-size_restricted.gif" style="position:fixed; top:20px; right: 20px;">
-    <img src="https://thumbs.gfycat.com/HomelyOrganicAmericancrayfish-size_restricted.gif" style="position:fixed; bottom:20px; left: 20px;">
- 
- 
- 
- 
-  </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sign In</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="center">
+    <br><br><br><br><br><br>
+    <h1>WELCOME <span style="font-size: 4rem;" id="welcomeuname"></span>!</h1>
+    <h2><img src="new.gif">We promise your password "<span id="welcomepassword" style="font-size: 3.5rem; font-style: italic;"></span>" is safe with us</h2>
+    <a href="http://uwindsor.xyz"><img
+        src="https://web.archive.org/web/19970726213331im_/http://www.uwindsor.ca/leaf87.jpg"></a>
+    <h3>Welcome to the student page</h3>
+    <p>WOULD YOU LIKE TO "log out" ?</p>
+        <button class="bigbtn" onclick="logout()">BUTTON</button>
+
+    <h2><= What would you like to do =></h2>
+    <button class="bigbtn" onclick="message()">Add class</button>
+    <button class="bigbtn" onclick="message()">Remove class</button>
+    <button class="bigbtn" onclick="message()">Look at classes</button>
+    <button class="bigbtn" onclick="message()">Financial Info</button>
+    <button class="bigbtn" onclick="alert('bye bye'); logout()">Drop Out</button>
+
+    <img src="https://i.pinimg.com/originals/ce/4c/9d/ce4c9d67fb6174aa268bf7e71c12b8ff.gif"
+        style="position:fixed; top:20px; right: 20px;" height="100px;">
+    <img src="https://i.pinimg.com/originals/4d/95/59/4d95590502072858b77182e41a1a6259.gif" height="100px;"
+        style="position:fixed; bottom:20px; left: 20px;">
+
+    <script>
+        const uname = localStorage.getItem('uname');
+        const password = localStorage.getItem('password');
+        if(uname==null){
+            window.location.href = "error.html";
+        }
+        const welcomeuname = document.querySelector('#welcomeuname');
+        welcomeuname.innerText = uname;
+        const welcomepassword = document.querySelector('#welcomepassword');
+        welcomepassword.innerText = password;
+
+        function logout(){
+            localStorage.clear();
+            location.reload();
+        }
+
+        function message(){
+            alert('coming spring 2001');
+        }
+    </script>
+  <script src="script.js"></script>
+</body>
 </html>

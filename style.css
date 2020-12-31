@@ -4,13 +4,15 @@ body{
   color: blue; 
 }
 
-h1{
+h1,h2,h3,h4,h5,h6,p{
   background-color: white; 
 }
 
-p{
-  background-color: white; 
-}
 .center{
   text-align: center;
+}
+
+.bigbtn{
+  padding: 2rem;
+  font-size: 1.5rem;
 }
